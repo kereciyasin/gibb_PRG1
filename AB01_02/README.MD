@@ -30,13 +30,13 @@ Before running the project, make sure you have the following:
 - **Visual Studio** or any other C#-compatible IDE
 - **.NET Framework 4.5 or later**
 - **OpenWeatherMap API key**: You will need a valid API key from [OpenWeatherMap](https://openweathermap.org/api) to fetch weather data.
-
+-
 ### 🔧 Installation Steps
 
-1. **Clone the Project**:
+- **Clone the Project**:
    ```bash
    git clone <repo_url>
-
+-
 ### 🔑 Add Your API Key
 
 - To retrieve weather data, you need to add your OpenWeatherMap API key.
@@ -46,4 +46,21 @@ Before running the project, make sure you have the following:
 3. Locate the following line in the code:
  ```bash
    private readonly string apiKey = "YOUR_API_KEY"; // Replace with your OpenWeatherMap API key.
+-
+### 📦 Install Newtonsoft.Json
+
+- To parse JSON data from the OpenWeatherMap API, you need to install the Newtonsoft.Json package.
+
+1. Open NuGet Package Manager in Visual Studio:
+* In Visual Studio, go to Tools > NuGet Package Manager > Manage NuGet Packages for Solution.
+2. Search for Newtonsoft.Json in the Browse tab.
+3. Select the package and click Install to add it to your project.
+-
+### 🏃‍♂️ Run the Project
+- Follow these steps to build and run the project:
+
+1. Open the project in Visual Studio.
+2. Build the project by pressing Ctrl + Shift + B.
+3. Run the project by pressing F5 or Ctrl + F5.
+
 
