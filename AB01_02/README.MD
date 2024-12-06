@@ -70,7 +70,7 @@ To retrieve weather data, you need to add your **OpenWeatherMap API key**.
 ### 🖼️ Application Example Screenshot
 Here’s an example of how the application should look when you run it:
 
-
+![GUI](/Screenshot/02.png)
 <!-- Replace this with the actual path to your image -->
 
 
