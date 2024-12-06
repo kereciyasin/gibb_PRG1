@@ -65,6 +65,7 @@ To retrieve weather data, you need to add your **OpenWeatherMap API key**.
 2. Build the project by pressing Ctrl + Shift + B.
 3. Run the project by pressing F5 or Ctrl + F5.
 
+![GUI](/Screenshot/01.png)
 ---
 
 ### 🖼️ Application Example Screenshot
