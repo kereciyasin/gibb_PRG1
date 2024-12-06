@@ -38,8 +38,8 @@ namespace AB01_03
             using (var client = new SmtpClient())
             {
                 // SMTP sunucusu, port ve güvenli bağlantı (TLS)
-                client.Connect("smtp.gmail.com", 587, MailKit.Security.SecureSocketOptions.StartTls); // TLS bağlantısı kullanarak
-                client.Authenticate("kereciyasin52@gmail.com", "kffl kuhs tftg pcvs"); // E-posta ve uygulama şifresi
+                client.Connect("smtp.gmail.com", 587, MailKit.Security.SecureSocketOptions.StartTls);
+                client.Authenticate("your-mail", "your-code"); 
                 client.Send(message);
                 client.Disconnect(true);
             }
