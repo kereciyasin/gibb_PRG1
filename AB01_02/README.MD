@@ -69,8 +69,6 @@ Before running the project, make sure you have the following:
 Here’s an example of how the application should look when you run it:
 
 
-![GUI](/Screenshot/01.png)
-
 <!-- Replace this with the actual path to your image -->
 
 
