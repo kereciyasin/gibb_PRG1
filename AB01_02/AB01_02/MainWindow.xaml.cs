@@ -9,7 +9,7 @@ namespace AB01_02
 {
     public partial class MainWindow : Window
     {
-        private readonly string apiKey = "6ce2532a24db7a048acdb4cc19854e25"; // İlk API anahtarınız
+        private readonly string apiKey = "6ce2532a24db7a048acdb4cc19854e25"; // İlk API anahtar
 
         public MainWindow()
         {
