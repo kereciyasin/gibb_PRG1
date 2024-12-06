@@ -30,14 +30,14 @@ Before running the project, make sure you have the following:
 - **Visual Studio** or any other C#-compatible IDE
 - **.NET Framework 4.5 or later**
 - **OpenWeatherMap API key**: You will need a valid API key from [OpenWeatherMap](https://openweathermap.org/api) to fetch weather data.
-
+---
 ### 🔧 Installation Steps
 
-  **Clone the Project**:
+- **Clone the Project**:
    ```bash
    git clone <repo_url>
-
-## 🔑 Add Your API Key
+---
+### 🔑 Add Your API Key
 
 To retrieve weather data, you need to add your **OpenWeatherMap API key**.
 
@@ -47,59 +47,32 @@ To retrieve weather data, you need to add your **OpenWeatherMap API key**.
    ```csharp
    private readonly string apiKey = "YOUR_API_KEY"; // Replace with your OpenWeatherMap API key.
 
-## 📦 Install Newtonsoft.Json
-
-To parse JSON data from the OpenWeatherMap API, you need to install the **Newtonsoft.Json** package.
-
-1. Open **NuGet Package Manager** in Visual Studio:
-   - In Visual Studio, go to **Tools > NuGet Package Manager > Manage NuGet Packages for Solution**.
-2. Search for `Newtonsoft.Json` in the **Browse** tab.
-3. Select the package and click **Install** to add it to your project.
-
 ---
 
-## 🏃‍♂️ Run the Project
+### 📦 Install Newtonsoft.Json
 
-Follow these steps to build and run the project:
+- To parse JSON data from the OpenWeatherMap API, you need to install the Newtonsoft.Json package.
 
-1. Open the project in **Visual Studio**.
-2. Build the project by pressing **Ctrl + Shift + B**.
-3. Run the project by pressing **F5** or **Ctrl + F5**.
+1. Open NuGet Package Manager in Visual Studio:
+* In Visual Studio, go to Tools > NuGet Package Manager > Manage NuGet Packages for Solution.
+2. Search for Newtonsoft.Json in the Browse tab.
+3. Select the package and click Install to add it to your project.
+---
+### 🏃‍♂️ Run the Project
+- Follow these steps to build and run the project:
 
+1. Open the project in Visual Studio.
+2. Build the project by pressing Ctrl + Shift + B.
+3. Run the project by pressing F5 or Ctrl + F5.
+
+![GUI](./Screenshot/01.png)
 ---
 
-## 🖥️ User Interface
-
-Once the project is running:
-
-1. Enter valid **Latitude** and **Longitude** coordinates in the respective input fields.
-   - For example, you can use coordinates like:
-     - **Latitude**: `41.0082`, **Longitude**: `28.9784` (Istanbul)
-2. Click the **"Fetch Weather by Coordinates"** button to retrieve and display the weather details for the entered coordinates.
-
-## 🌍 Example Coordinates
-
-Here are some sample coordinates you can use to test the weather data fetching:
-
-- **Istanbul**: Latitude: `41.0082`, Longitude: `28.9784`
-- **Ankara**: Latitude: `39.9208`, Longitude: `32.8541`
-- **London**: Latitude: `51.5074`, Longitude: `-0.1278`
-
-Feel free to replace these with other coordinates to check weather data for different locations.
-
----
-
-## 🖼️ Application Example Screenshot
-
+### 🖼️ Application Example Screenshot
 Here’s an example of how the application should look when you run it:
 
-![App UI](./path_to_ui_image.png) <!-- Replace this with the actual path to your image -->
-
----
-
-## 💻 Example Output
-
-When you input valid coordinates, the app will display weather information like this:
+![GUI](./Screenshot/02.png)
+<!-- Replace this with the actual path to your image -->
 
 
 
