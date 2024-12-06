@@ -67,6 +67,12 @@ Follow these steps to build and run the project:
 3. Run the project by pressing **F5** or **Ctrl + F5**.
 
 ---
+## 🖼️ Application Example Screenshot
+
+Here’s an example of how the application should look when you run it:
+
+![GUI](./Screenshot/01.png)
+
 
 ## 🖥️ User Interface
 
@@ -89,18 +95,12 @@ Feel free to replace these with other coordinates to check weather data for diff
 
 ---
 
-## 🖼️ Application Example Screenshot
-
-Here’s an example of how the application should look when you run it:
-
-![App UI](./path_to_ui_image.png) <!-- Replace this with the actual path to your image -->
-
----
 
 ## 💻 Example Output
 
 When you input valid coordinates, the app will display weather information like this:
 
+![GUI](./Screenshot/02.png)
 
 
 
