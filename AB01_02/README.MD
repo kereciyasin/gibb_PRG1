@@ -71,7 +71,7 @@ Follow these steps to build and run the project:
 
 Here’s an example of how the application should look when you run it:
 
-![GUI](./Screenshot/01.png)
+![GUI](/Screenshot/01.png)
 
 
 ## 🖥️ User Interface
@@ -100,7 +100,7 @@ Feel free to replace these with other coordinates to check weather data for diff
 
 When you input valid coordinates, the app will display weather information like this:
 
-![GUI](./Screenshot/02.png)
+![GUI](/Screenshot/02.png)
 
 
 
