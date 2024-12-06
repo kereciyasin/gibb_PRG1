@@ -39,4 +39,11 @@ Before running the project, make sure you have the following:
 
 ### 🔑 Add Your API Key
 
-1. 
+- To retrieve weather data, you need to add your OpenWeatherMap API key.
+
+1. Go to OpenWeatherMap and sign up for a free API key.
+2. Once you have your API key, open the MainWindow.xaml.cs file in your project.
+3. Locate the following line in the code:
+ ```bash
+   private readonly string apiKey = "YOUR_API_KEY"; // Replace with your OpenWeatherMap API key.
+
