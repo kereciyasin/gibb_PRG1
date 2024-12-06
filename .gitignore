@@ -1,0 +1,18 @@
+# Visual Studio ile ilgili dosyalar
+.vs/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Geçici dosyalar
+*.log
+*.tmp
+
+# Build klasörleri
+/bin/
+/obj/
+
+# Diğer geçici dosyalar
+Thumbs.db
+ehthumbs.db
