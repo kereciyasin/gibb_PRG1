@@ -46,7 +46,7 @@ Before running the project, make sure you have the following:
 3. Locate the following line in the code:
  ```bash
    private readonly string apiKey = "YOUR_API_KEY"; // Replace with your OpenWeatherMap API key.
-
+---
 
 ### 📦 Install Newtonsoft.Json
 
