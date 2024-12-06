@@ -65,13 +65,13 @@ To retrieve weather data, you need to add your **OpenWeatherMap API key**.
 2. Build the project by pressing Ctrl + Shift + B.
 3. Run the project by pressing F5 or Ctrl + F5.
 
-![GUI](/Screenshot/01.png)
+![GUI](./Screenshot/01.png)
 ---
 
 ### 🖼️ Application Example Screenshot
 Here’s an example of how the application should look when you run it:
 
-![GUI](/Screenshot/02.png)
+![GUI](./Screenshot/02.png)
 <!-- Replace this with the actual path to your image -->
 
 
