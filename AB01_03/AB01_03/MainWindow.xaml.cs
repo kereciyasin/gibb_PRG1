@@ -16,7 +16,7 @@ namespace AB01_03
             string recipientEmail = emailTextBox.Text;
             if (!string.IsNullOrEmpty(recipientEmail))
             {
-                SendEmail(recipientEmail, "Test Subject", "This is a test email. I am Yasin :)");
+                SendEmail(recipientEmail, "Test Subject", "This is a test email. I am Y");
                 MessageBox.Show("Email Sent Successfully!");
             }
             else
@@ -38,8 +38,8 @@ namespace AB01_03
             using (var client = new SmtpClient())
             {
                 // SMTP sunucusu, port ve güvenli bağlantı (TLS)
-                client.Connect("smtp.gmail.com", 587, MailKit.Security.SecureSocketOptions.StartTls);
-                client.Authenticate("your-mail", "your-code"); 
+                client.Connect("smtp.gmail.com", 587, MailKit.Security.SecureSocketOptions.StartTls); 
+                client.Authenticate("kereciyasin52@gmail.com", "kffl kuhs tftg pcvs"); 
                 client.Send(message);
                 client.Disconnect(true);
             }
