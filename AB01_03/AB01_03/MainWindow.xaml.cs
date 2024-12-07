@@ -39,7 +39,7 @@ namespace AB01_03
             {
                 // SMTP sunucusu, port ve güvenli bağlantı (TLS)
                 client.Connect("smtp.gmail.com", 587, MailKit.Security.SecureSocketOptions.StartTls); 
-                client.Authenticate("kereciyasin52@gmail.com", "kffl kuhs tftg pcvs"); 
+                client.Authenticate("youremail@gmail.com", "yourpassword"); 
                 client.Send(message);
                 client.Disconnect(true);
             }
