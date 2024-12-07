@@ -51,12 +51,10 @@ To run the project:
 
 ### 📸 Screenshots
 
-- Application Interface
+
   ![gui](./Screenshot/01.png)
 
-- Error Message  
   ![gui](./Screenshot/02.png)
   
-- After Successful Login
   ![gui](./Screenshot/03.png)
                                                                                                                                                                                                                                                                                  
