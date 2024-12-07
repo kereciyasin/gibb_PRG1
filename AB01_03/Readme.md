@@ -28,7 +28,7 @@ The email sending functionality is powered by the **MailKit** library. The proje
 ### 1. Clone the Project
 To clone this project to your local machine, use the following command:
 
-```bash git clone https://github.com/your-username/send-email-app.git
+- git clone https://github.com/your-username/send-email-app.git
 
 ---
 
