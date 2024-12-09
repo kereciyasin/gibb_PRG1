@@ -1,12 +1,96 @@
 ﻿<Window x:Class="AB03_02.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:AB03_02"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="CSV Editor" Height="450" Width="800">
     <Grid>
+        <!-- Grid için 2 satır ve 1 sütun oluşturuyoruz -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Butonlar için satır -->
+            <RowDefinition Height="*"/>
+            <!-- DataGrid ve ComboBox için satır -->
+        </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Butonlar -->
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Grid.Row="0">
+            <!-- Open CSV Butonu -->
+            <Button Content="Open CSV" Width="100" Height="40" Margin="10" Click="OpenCsvButton_Click">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#4CAF50"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="BorderBrush" Value="#4CAF50"/>
+                        <Setter Property="BorderThickness" Value="2"/>
+                        <Setter Property="Padding" Value="10,5"/>
+                        <!-- Border ile CornerRadius kullanımı -->
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="2" CornerRadius="5">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            <!-- Select Butonu -->
+            <Button Content="Select" Width="100" Height="40" Margin="10" Click="SelectButton_Click">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#2196F3"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="BorderBrush" Value="#2196F3"/>
+                        <Setter Property="BorderThickness" Value="2"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="Padding" Value="10,5"/>
+                        <!-- Border ile CornerRadius kullanımı -->
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="2" CornerRadius="5">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            <!-- Save CSV Butonu -->
+            <Button Content="Save CSV" Width="100" Height="40" Margin="10" HorizontalAlignment="Right" Click="SaveCsvButton_Click">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#FF5722"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="BorderBrush" Value="#FF5722"/>
+                        <Setter Property="BorderThickness" Value="2"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="Padding" Value="10,5"/>
+                        <!-- Border ile CornerRadius kullanımı -->
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="2" CornerRadius="5">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </StackPanel>
+
+        <!-- DataGrid ve ComboBox -->
+        <DataGrid Name="dataGrid" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="760" Height="300" Grid.Row="1"/>
+        <ComboBox Name="columnComboBox" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="150" Margin="10,0,0,10" Grid.Row="1"/>
     </Grid>
 </Window>
